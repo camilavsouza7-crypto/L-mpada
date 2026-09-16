@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(219, 112, 147);
+
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow',
+        Arial,
+        sans-serif;
+
+    color: #310808;
+}
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 400px;
+    min-height: 500px;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(255, 192, 203);
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 70px rgb(255, 0, 157);
+}
+
+.login-card h1 {
+    width: 100%;
+
+    text-align: center;
+
+    font: bold 2.1rem serif;
+
+    padding-bottom: 15px;
+
+    margin-bottom: 10px;
+
+    border-bottom: solid 5px blanchedalmond;
+}
+
+.subtitulo {
+    margin-bottom: 30px;
+
+    color: #5c1b31;
+
+    font-size: 1.1rem;
+}
+
+.campo {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.campo label {
+    margin-bottom: 8px;
+
+    font: bold 1.2rem serif;
+}
+
+.campo input {
+    width: 300px;
+    height: 50px;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    outline: none;
+
+    font: bold 1.1rem serif;
+
+    text-align: center;
+}
+
+.campo input:focus {
+    box-shadow: 0 0 8px rgb(255, 0, 157);
+}
+
+button {
+    width: 300px;
+    height: 45px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #e07da6;
+
+    color: black;
+
+    font: bold 1.2rem serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d45d91;
+
+    transform: scale(1.03);
+}
+
+#mensagem {
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+
+    .login-card {
+        width: 90%;
+    }
+
+    .campo,
+    .campo input,
+    button {
+        width: 100%;
+    }
+}
